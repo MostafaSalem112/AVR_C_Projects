@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="E:\embedded_iti\AVR\workspace\C_projects\UART_driver"/>
+		<item value="E:\embedded_iti\AVR\workspace\C_projects\TIMER2_driver"/>
+		<item value="E:\embedded_iti\AVR\workspace\C_projects\TIMER1_driver"/>
+		<item value="E:\embedded_iti\AVR\workspace\C_projects\TIMER0_driver"/>
+		<item value="E:\embedded_iti\AVR\workspace\C_projects\test2"/>
+		<item value="E:\embedded_iti\AVR\workspace\C_projects\test"/>
+		<item value="E:\embedded_iti\AVR\workspace\C_projects\system_1"/>
+		<item value="E:\embedded_iti\AVR\workspace\C_projects\stepper"/>
+		<item value="E:\embedded_iti\AVR\workspace\C_projects\SPI_SLAVE_2_driver"/>
+		<item value="E:\embedded_iti\AVR\workspace\C_projects\SPI_SLAVE_1_driver"/>
+		<item value="E:\embedded_iti\AVR\workspace\C_projects\SPI_MASTER_driver"/>
+		<item value="E:\embedded_iti\AVR\workspace\C_projects\SevSeg_Driver"/>
+		<item value="E:\embedded_iti\AVR\workspace\C_projects\SERVO_driver"/>
+		<item value="E:\embedded_iti\AVR\workspace\C_projects\seg7"/>
+		<item value="E:\embedded_iti\AVR\workspace\C_projects\PWM_Calculation"/>
+		<item value="E:\embedded_iti\AVR\workspace\C_projects\LED"/>
+		<item value="E:\embedded_iti\AVR\workspace\C_projects\LCD_driver"/>
+		<item value="E:\embedded_iti\AVR\workspace\C_projects\KeyPad_driver"/>
+		<item value="E:\embedded_iti\AVR\workspace\C_projects\ICU_driver"/>
+		<item value="E:\embedded_iti\AVR\workspace\C_projects\firstDIODriver"/>
+		<item value="E:\embedded_iti\AVR\workspace\C_projects\final_project_2"/>
+		<item value="E:\embedded_iti\AVR\workspace\C_projects\final_project_1"/>
+		<item value="E:\embedded_iti\AVR\workspace\C_projects\EXTI_driver"/>
+		<item value="E:\embedded_iti\AVR\workspace\C_projects\DCMOTOR_driver"/>
+		<item value="E:\embedded_iti\AVR\workspace\C_projects\ADC_driver"/>
+	</list>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+		</list>
+	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item value="619" key="DIALOG_X_ORIGIN"/>
+		<item value="254" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

@@ -1,0 +1,61 @@
+14:29:06 **** Build of configuration Debug for project UART_driver ****
+make all 
+Building file: ../DIO_program.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"DIO_program.d" -MT"DIO_program.o" -c -o "DIO_program.o" "../DIO_program.c"
+Finished building: ../DIO_program.c
+ 
+Building file: ../LCD_program.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"LCD_program.d" -MT"LCD_program.o" -c -o "LCD_program.o" "../LCD_program.c"
+In file included from ../LCD_program.c:6:
+e:/embedded_iti/01-embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from e:/embedded_iti/01-embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../LCD_program.c:6:
+e:/embedded_iti/01-embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../LCD_program.c
+ 
+Building file: ../UART_program.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"UART_program.d" -MT"UART_program.o" -c -o "UART_program.o" "../UART_program.c"
+Finished building: ../UART_program.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:31: warning: pointer targets in passing argument 1 of 'UART_voidSendString' differ in signedness
+../main.c:16: warning: unused variable 'data'
+Finished building: ../main.c
+ 
+Building target: UART_driver.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,UART_driver.map -mmcu=atmega32 -o "UART_driver.elf"  ./DIO_program.o ./LCD_program.o ./UART_program.o ./main.o   
+Finished building target: UART_driver.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S UART_driver.elf  >"UART_driver.lss"
+Finished building: UART_driver.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex UART_driver.elf  "UART_driver.hex"
+Finished building: UART_driver.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 UART_driver.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8066 bytes (24.6% Full)
+(.text + .data + .bootloader)
+
+Data:         37 bytes (1.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+14:29:09 Build Finished (took 2s.756ms)
+

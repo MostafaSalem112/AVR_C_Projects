@@ -1,0 +1,20 @@
+21:18:16 **** Incremental Build of configuration Debug for project firstDIODriver ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 firstDIODriver.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5556 bytes (17.0% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+21:18:16 Build Finished (took 357ms)
+

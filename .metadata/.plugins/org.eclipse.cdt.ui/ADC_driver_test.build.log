@@ -1,0 +1,33 @@
+20:38:30 **** Incremental Build of configuration Debug for project ADC_driver_test ****
+make all 
+Building target: ADC_driver_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ADC_driver_test.map -mmcu=atmega16 -o "ADC_driver_test.elf"  ./ADC_program.o ./DIO_program.o ./LCD_program.o ./main.o   
+Finished building target: ADC_driver_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ADC_driver_test.elf  >"ADC_driver_test.lss"
+Finished building: ADC_driver_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ADC_driver_test.elf  "ADC_driver_test.hex"
+Finished building: ADC_driver_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 ADC_driver_test.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    8740 bytes (53.3% Full)
+(.text + .data + .bootloader)
+
+Data:         56 bytes (5.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+20:38:31 Build Finished (took 626ms)
+

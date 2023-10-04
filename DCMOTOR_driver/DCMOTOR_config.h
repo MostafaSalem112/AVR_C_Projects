@@ -1,0 +1,9 @@
+#ifndef _DCMOTOR_CONFIG_H
+#define _DCMOTOR_CONFIG_H
+
+#define DCMOTOR_PORT PORTA
+
+#define DCMOTOR_CONTROL_0 PIN0
+#define DCMOTOR_CONTROL_1 PIN1
+
+#endif
